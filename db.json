@@ -1,0 +1,93 @@
+{
+  "rdv": [
+    {
+      "date": "21/02/2024",
+      "time": "10:20",
+      "patient": {
+        "name": "Patient 1",
+        "phone": "0102030405"
+      },
+      "medicin": {}
+    },
+    {
+      "date": "21/02/2024",
+      "time": "10:20",
+      "patient": {
+        "name": "Patient 2",
+        "phone": "0102030405"
+      }
+    }
+  ],
+  "services": [
+    {
+      "name": "Service 1",
+      "doctors": [
+        {
+          "id": 1,
+          "name": "Doctor 1"
+        },
+        {
+          "id": 2,
+          "name": "Doctor 2"
+        },
+        {
+          "id": 3,
+          "name": "Doctor 2"
+        },
+        {
+          "id": 4,
+          "name": "Doctor 2"
+        },
+        {
+          "id": 5,
+          "name": "Doctor 3"
+        }
+      ]
+    },
+    {
+      "name": "Chirugie 2",
+      "doctors": [
+        {
+          "id": 1,
+          "name": "Chirugien 1"
+        },
+        {
+          "id": 1,
+          "name": "Chirugien 2"
+        },
+        {
+          "id": 1,
+          "name": "Chirugien 2"
+        },
+        {
+          "id": 1,
+          "name": "Chirugien 2"
+        },
+        {
+          "id": 1,
+          "name": "Chirugien 3"
+        }
+      ]
+    },
+    {
+      "name": "Buco",
+      "doctors": [
+        {
+          "name": "Dentiste 1"
+        },
+        {
+          "name": "Dentiste 2"
+        },
+        {
+          "name": "Dentiste 2"
+        },
+        {
+          "name": "Dentiste 2"
+        },
+        {
+          "name": "Dentiste 3"
+        }
+      ]
+    }
+  ]
+}
