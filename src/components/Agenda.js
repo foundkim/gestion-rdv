@@ -3,6 +3,10 @@ import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { formattedEvents } from "./utilis";
+import "moment/locale/fr";
+import { EventForm } from "./CreateEvent";
+
+moment.locale("fr");
 
 const localizer = momentLocalizer(moment);
 
@@ -37,7 +41,9 @@ export const Agenda = (props) => {
   const handleSelectSlot = ({ start, end }) => {
     // Show event creation form when a time slot is selected
     setShowEventForm(true);
-    setNewEvent({ start, end });
+    const date = start.toISOString().slice(0, 10);
+    const time = moment(start).format("HH:mm");
+    setNewEvent({ date, time });
   };
 
   const handleEventFormSubmit = (eventData) => {
@@ -57,6 +63,13 @@ export const Agenda = (props) => {
     setShowEventForm(false);
   };
 
+  const onSelectEvent = (event) => {
+    const { start, title, patientPhone } = event;
+    setShowEventForm(true);
+    const date = start.toISOString().slice(0, 10);
+    const time = moment(start).format("HH:mm");
+    setNewEvent({ date, time, name: title, phone: patientPhone.split(" ")[1] });
+  };
   //   const [appreciation, setAppreciation] = useState("");
 
   const refreshPage = () => {
@@ -95,12 +108,16 @@ export const Agenda = (props) => {
               tooltipAccessor="patientPhone"
               selectable
               onSelectSlot={handleSelectSlot}
+              onSelectEvent={onSelectEvent}
+              // onView={() => setShowEventForm(true)}
               style={{ height: 500 }}
 
               // You can customize other props as needed
             />
             {showEventForm && (
               <EventForm
+                show={showEventForm}
+                setShow={setShowEventForm}
                 onSubmit={handleEventFormSubmit}
                 onCancel={() => setShowEventForm(false)}
                 defaultValues={newEvent}
@@ -115,74 +132,5 @@ export const Agenda = (props) => {
         </center>
       </div>
     </>
-  );
-};
-
-const EventForm = ({ onSubmit, onCancel, defaultValues }) => {
-  const [formData, setFormData] = useState(defaultValues || {});
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit(formData);
-  };
-
-  return (
-    <div>
-      <h2>Create Event</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Date:</label>
-          <input
-            type="date"
-            name="date"
-            value={formData.date || ""}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Time:</label>
-          <input
-            type="time"
-            name="time"
-            value={formData.time || ""}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Nom du patient:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name || ""}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Téléphone:</label>
-          <input
-            type="text"
-            name="phone"
-            value={formData.phone || ""}
-            onChange={handleChange}
-          />
-        </div>
-
-        {/* Additional form fields for event details */}
-        <div>
-          <button type="submit">Save</button>
-          <button type="button" onClick={onCancel}>
-            Cancel
-          </button>
-        </div>
-      </form>
-    </div>
   );
 };

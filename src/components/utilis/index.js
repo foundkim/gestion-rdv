@@ -22,6 +22,7 @@ export const formattedEvents = (event) => {
   const eventDate = moment(event.date + " " + event.time, [
     "DD-MM-YYYY HH:mm",
     "DD/MM/YYYY HH:mm",
+    "YYYY-MM-DD HH:mm"
   ]).toDate();
 
   return {
