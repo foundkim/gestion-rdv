@@ -1,13 +1,16 @@
 {
   "rdv": [
     {
-      "date": "21/02/2024",
+      "date": "21/03/2024",
       "time": "10:20",
       "patient": {
         "name": "Patient 1",
         "phone": "0102030405"
       },
-      "medicin": {}
+      "doctor": {
+        "id": 1
+      },
+      "id": "590a"
     },
     {
       "date": "21/02/2024",
@@ -15,7 +18,263 @@
       "patient": {
         "name": "Patient 2",
         "phone": "0102030405"
-      }
+      },
+      "doctor": {
+        "id": 2
+      },
+      "id": "be52"
+    },
+    {
+      "id": "e69a",
+      "date": "2024-03-21",
+      "time": "00:00",
+      "patient": {
+        "name": "FONDIO",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "9886",
+      "date": "2024-03-23",
+      "time": "01:00",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0548545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "c95a",
+      "date": "2024-03-22",
+      "time": "12:00",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0548545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "b6b5",
+      "date": "2024-03-23",
+      "time": "01:00",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0548545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "99f0",
+      "date": "2024-03-22",
+      "time": "03:30",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "f1cd",
+      "date": "2024-03-21",
+      "time": "04:30",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "3259",
+      "date": "2024-03-21",
+      "time": "04:30",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "4d37",
+      "date": "2024-03-21",
+      "time": "05:30",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "e535",
+      "date": "2024-03-23",
+      "time": "05:00",
+      "patient": {
+        "name": "Test Test",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "88b9",
+      "date": "2024-03-20",
+      "time": "00:00",
+      "patient": {
+        "name": "FONDIO",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "1763",
+      "date": "2024-03-22",
+      "time": "00:00",
+      "patient": {
+        "name": "Test 2à²",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "d872",
+      "date": "2024-03-11",
+      "time": "00:00",
+      "patient": {
+        "name": "Test New",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "5b97",
+      "date": "2024-03-20",
+      "time": "03:00",
+      "patient": {
+        "name": "Ma marane",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "3b68",
+      "date": "2024-03-24",
+      "time": "18:00",
+      "patient": {
+        "name": "Ma marane 2",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "eb31",
+      "date": "2024-03-22",
+      "time": "14:30",
+      "patient": {
+        "name": "Ma marane 55",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "31ec",
+      "date": "2024-03-17",
+      "time": "00:00",
+      "patient": {
+        "name": "YesWe can",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "50db",
+      "date": "2024-03-20",
+      "time": "06:30",
+      "patient": {
+        "name": "No We are tired",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 1,
+        "name": "Doctor 1"
+      },
+      "service": "Service 1"
+    },
+    {
+      "id": "a4a1",
+      "date": "2024-03-19",
+      "time": "00:00",
+      "patient": {
+        "name": "AGUPEX-PAY",
+        "phone": "0748545154"
+      },
+      "doctor": {
+        "id": 2,
+        "name": "Doctor 2"
+      },
+      "service": "Service 1"
     }
   ],
   "services": [
@@ -42,7 +301,8 @@
           "id": 5,
           "name": "Doctor 3"
         }
-      ]
+      ],
+      "id": "1845"
     },
     {
       "name": "Chirugie 2",
@@ -67,7 +327,8 @@
           "id": 1,
           "name": "Chirugien 3"
         }
-      ]
+      ],
+      "id": "57fb"
     },
     {
       "name": "Buco",
@@ -87,7 +348,8 @@
         {
           "name": "Dentiste 3"
         }
-      ]
+      ],
+      "id": "57ca"
     }
   ]
 }

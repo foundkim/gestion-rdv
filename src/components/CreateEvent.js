@@ -15,10 +15,11 @@ export const EventForm = ({ onSubmit, onCancel, defaultValues, show }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit(formData);
+    console.log(defaultValues);
+    onSubmit(formData, defaultValues?.id);
     setFormData({});
   };
- 
+
   return (
     <Modal
       show={show}

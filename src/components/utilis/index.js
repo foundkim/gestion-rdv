@@ -22,13 +22,14 @@ export const formattedEvents = (event) => {
   const eventDate = moment(event.date + " " + event.time, [
     "DD-MM-YYYY HH:mm",
     "DD/MM/YYYY HH:mm",
-    "YYYY-MM-DD HH:mm"
+    "YYYY-MM-DD HH:mm",
   ]).toDate();
 
   return {
+    id: event.id,
     start: eventDate,
     end: moment(eventDate).add(20, "minutes").toDate(), // Assuming events are of 0 duration, adjust as necessary
-    title: event.patient.name,
-    patientPhone: `Tel: ${event.patient.phone}`, // You can add additional properties as needed
+    title: event?.patient.name,
+    patientPhone: `Tel: ${event?.patient.phone}`, // You can add additional properties as needed
   };
 };
